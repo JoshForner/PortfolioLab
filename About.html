@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <h1>About</h1>
+    <div class="topnav">
+            <a class="active" href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Portfolio.html">Portfolio</a>
+      </div>
+    </head>
+    <body>
+      <p></p>
+      <p>I am a 25 year old .Net student at Grand Circus. I previously have worked at places such as Allendale Heating and UPS.
+        To contact me please email me at fornerjos@gmail.com
+      </p>
+      <a href="https://www.linkedin.com/in/josh-forner-92a0b8189/">My linkedin</a>
+      <p></p>
+       <p>Map location of my hometown (It wants me to pay for the API key, but the marker is in the right spot!)</p>
+      <style>
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+        background-color: grey;
+       }
+      </style>
+      <div id="map"></div>
+      <script>
+  function initMap() {
+    var atown = {lat: 42.972033, lng: -85.954042};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: atown});
+    var marker = new google.maps.Marker({position: atown, map: map});
+  }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCWoBoWkMBEZoR0U-n8eD0S0Ll3S84nsI&callback=initMap">
+      </script>
+       </style>
+    </body>
+      <footer>
+        <p></p>
+        Great things never come from comfort zones.
+      </footer>
+</html>
